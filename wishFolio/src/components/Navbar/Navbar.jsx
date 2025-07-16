@@ -6,21 +6,28 @@ import {
   faHouse,
   faScroll,
 } from "@fortawesome/free-solid-svg-icons";
+import CircularButton from "../CircularButton/CircularButton";
 
 const Navbar = () => {
   return (
-    <nav>
-      <div>WishFolio</div>
-      <div>
-        <NavLink to="/">
-          <FontAwesomeIcon icon={faHouse} />
-        </NavLink>
-        <NavLink to="/wish-list">
-          <FontAwesomeIcon icon={faScroll} />
-        </NavLink>
-        <NavLink to="/my-profile">
-          <FontAwesomeIcon icon={faCircleUser} />
-        </NavLink>
+    <nav className={styles.navbar}>
+      <div className={styles.navbarContainer}>
+        <div className={styles.logoContainer}>
+          <NavLink to="/" className={styles.logoLink}>
+            <h1 className={styles.logoTitle}>WishFolio</h1>
+          </NavLink>
+        </div>
+        <div className={styles.linksContainer}>
+          <CircularButton urlPath={"/"} icon={faHouse} />
+          <CircularButton urlPath={"/wish-list"} icon={faScroll} />
+          <CircularButton urlPath={"/my-profile"} icon={faCircleUser} />
+        </div>
+
+        <div className={styles.signInOutContainer}>
+          <NavLink to="/sign-in" className={styles.signInOutLink}>
+            Sign In
+          </NavLink>
+        </div>
       </div>
     </nav>
   );

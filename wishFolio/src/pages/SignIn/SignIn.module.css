@@ -1,0 +1,58 @@
+.formWrapper {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.signInForm {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-medium);
+}
+
+.groupContainer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.label {
+  font-weight: bold;
+}
+
+.input {
+  height: 32px;
+  padding: 0 var(--spacing-small);
+  border-radius: var(--border-radius-xs);
+}
+
+.feedbackMessage {
+  margin: 0;
+  height: 1rem;
+}
+
+.submitButton {
+  height: 42px;
+  font-size: var(--font-size-medium);
+  font-weight: bold;
+  border-radius: var(--border-radius-xs);
+  border: none;
+  background-color: var(--primary-color);
+}
+
+.submitButton:hover {
+  background-color: var(--primary-color-lighter);
+}
+
+.submitButton:active {
+  background-color: var(--primary-color);
+}
+
+.infoContainer {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-small);
+}
