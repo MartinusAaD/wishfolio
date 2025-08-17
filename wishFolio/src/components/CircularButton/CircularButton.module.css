@@ -6,10 +6,12 @@
   box-shadow: 0px 0px 4px 1px var(--primary-color);
   color: var(--primary-color);
   padding: 0.9rem;
+  transition: box-shadow 0.3s ease;
 }
 
 .circularLinkButton:hover {
-  background-color: rgb(237, 251, 255);
+  /* background-color: rgb(237, 251, 255); */
+  box-shadow: 0px 0px 10px 5px var(--primary-color);
 }
 
 .circularLinkButton:active {
